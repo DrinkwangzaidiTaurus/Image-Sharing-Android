@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient">
+
+
+        <RelativeLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_baseline_photo_camera_24" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="240dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="主题："
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginStart="15dp"/>
+
+            <EditText
+                android:id="@+id/PictureId"
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:layout_marginStart="100dp"
+                android:text=""
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="300dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片详情"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginStart="15dp"/>
+
+            <ImageView
+                android:id="@+id/clear_text"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/rubbish"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="350dp"
+            android:scrollbarThumbVertical="@drawable/ic_baseline_crop_portrait_24">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <EditText
+                    android:id="@+id/PicturesDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:hint="分享您此刻的心情"
+                    android:textSize="20dp"/>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="500dp">
+
+            <Button
+                android:id="@+id/fabu"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_yuanjiao"
+                android:text="发布图片"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
